@@ -1,0 +1,129 @@
+.futurePanelData {
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+}
+
+.futurePanelDataCard {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.futureDayDataCard {
+    flex-direction: column;
+    width: 100%;
+    max-width: 220px;
+    max-height: 300px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    display: flex;
+    border-radius: 20px;
+    transition: transform cubic-bezier(0.54, 0.81, 0.53, 1.5) 0.25s !important;
+    cursor: pointer;
+}
+
+.futureDayDataCard:hover {
+    transform: scale(0.95) !important;
+}
+
+.futureDayDataCard img {
+    max-width: 130px;
+    max-height: 90px;
+}
+
+.futureDayDataCard div {
+    white-space: nowrap;
+}
+
+.futureDayDataCard h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.futureDayDataCard h2 {
+    align-self: start;
+    white-space: nowrap;
+}
+
+.switchesBtnsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formatUnitForm {
+    backdrop-filter: blur(11px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.formatTimeForm {
+    backdrop-filter: blur(11px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.formatUnitForm input[type="radio"],
+.formatTimeForm input[type="radio"] {
+    display: none;
+}
+
+.formatTimeForm label {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.formatTimeForm input[type="radio"]:checked+label {
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.formatUnitForm label {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.formatUnitForm input[type="radio"]:checked+label {
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.futureDataCardsContainer {
+    display: flex;
+    gap: 25px;
+    overflow-x: overlay;
+    overflow-y: hidden;
+}
+
+@media (max-width:1280px) {
+    .futurePanelDataCard {
+        padding: 15px;
+    }
+
+    .futureDayDataCard {
+        padding: 15px;
+    }
+
+    .futureDataCardsContainer {
+        gap: 15px;
+    }
+}
+
+@media (max-width:340px) {
+    .switchesBtnsContainer {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: start;
+        gap: 5px;
+    }
+}
