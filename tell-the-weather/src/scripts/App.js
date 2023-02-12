@@ -134,9 +134,9 @@ class App extends React.Component {
 				<AnimatePresence>
 					{!!this.state.daily.length ? <>
 						<div className="appContainer">
-							<a className='github' href="https://github.com/Apheiro/weather-app">
+							<a className='github' href="https://github.com/MacauleyStephenson/Tell-The-Weather">
 								<IconSquareGithub width='50px' height='50px' />
-								<h2>Apheiros</h2>
+								<h2>Macauley Stephenson</h2>
 							</a>
 							<div className='weatherAppContainer'>
 								<TodayData data={this.state.info} setLocation={this.setLocation} getData={this.getData} hourly={this.state.hourly} />
@@ -156,3 +156,4 @@ class App extends React.Component {
 }
 
 export default App;
+
